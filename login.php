@@ -1,9 +1,9 @@
 <?php
 session_start();
+include "conexion.php";
 if(isset($_POST["rusuario"]) && isset($_POST["rpass"])){
     $usuario=trim(strtolower($_POST["rusuario"]));
     $pass=$_POST["rpass"];
-    include "conexion.php";
     $sql=sprintf("INSERT INTO scoreboard(usuario, pass) VALUES ('$usuario','$pass')");
     mysqli_query($link, $sql);
     header("location:index.php?op=CREADO");
