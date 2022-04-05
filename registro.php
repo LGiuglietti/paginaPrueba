@@ -10,10 +10,20 @@
     <title>Plantilla Básica</title>
  </head>
  <body>
-    <div class="container">
-        <br>
-        <div class="row">
-            <div class="col">
+     <?php include "navbar.php"; ?>
+     <br>
+    <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, quas vero nihil ad omnis dolore. Repudiandae quas distinctio, modi totam quam, fugiat illo asperiores veritatis id odit velit, provident voluptatum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-6">
+            <div class="container">
                 <div class="card">
                 <div class="card-body">
                     <form method="POST" action="login.php">
@@ -24,7 +34,7 @@
                         <input type="password" class="form-control" name="rpass">
                         <br>
                       </div>
-                      <button type="submit" class="btn btn-primary">Confirmar</button>
+                      <button type="submit" class="btn btn-primary">añadir empleado</button>
                 </div>
                 </div>
             </div>
